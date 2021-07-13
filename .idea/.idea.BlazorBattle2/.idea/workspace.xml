@@ -5,21 +5,14 @@
     <projectFile>BlazorBattle2/Client/BlazorBattle2.Client.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097e4e5a-65ec-4bf6-88e2-a574b58859d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/Icons/archer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/Icons/axe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/Icons/banana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/Icons/knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/Icons/mage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/FetchData.razor" beforeDir="false" />
+    <list default="true" id="097e4e5a-65ec-4bf6-88e2-a574b58859d1" name="Default Changelist" comment="adding TopMenu component">
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/AddBananas.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/BlazorBattle2.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/BlazorBattle2.Server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Shared/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +40,14 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/TopMenu.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor.css" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor.css" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/AddBananas.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vAiRi79NHlHapr6gNZyGNdhRSV" />
@@ -148,8 +144,16 @@
       <workItem from="1626012125603" duration="937000" />
       <workItem from="1626210014820" duration="1356000" />
       <workItem from="1626211389126" duration="1337000" />
-      <workItem from="1626212743353" duration="305000" />
+      <workItem from="1626212743353" duration="2925000" />
     </task>
+    <task id="LOCAL-00001" summary="adding TopMenu component">
+      <created>1626213174645</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626213174645</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,5 +176,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="adding TopMenu component" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding TopMenu component" />
   </component>
 </project>
