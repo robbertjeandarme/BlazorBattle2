@@ -1,16 +1,24 @@
-@using System.Text.Json
+@inject IBananaService BananaService
+@implements IDisposable
+
 <div class="top-menu">
     <img src="Icons/banana.png" alt="banana-icon"/>
-    <span class="popover-header"> @Bananas</span>
-    <AddBananas  BananasAdded="@AddBananas"/>
+    <span class="popover-header">
+        @BananaService.Bananas
+    </span>
+    
+    <AddBananas />
 </div>
 
 @code {
-    [Parameter]
-    public int Bananas { get; set; } = 100;
-
-    public void AddBananas(int value)
+    
+    protected override void OnInitialized()
     {
-        Bananas += value;
+        BananaService.OnChange += StateHasChanged;
     }
+    public void Dispose()
+    {
+        BananaService.OnChange -= StateHasChanged;
+    }
+
 }
