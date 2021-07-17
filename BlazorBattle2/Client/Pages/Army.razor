@@ -1,0 +1,43 @@
+@page "/army"
+@using BlazorBattle2.Shared
+@inject IUnitService UnitService
+<h3>Army</h3>
+
+@if (UnitService.MyUnits.Count == 0)
+{
+    <p>Army is empty !</p>
+}
+else
+{
+    <table class="table">
+        @foreach (var unit in UnitService.MyUnits)
+        {
+            <tr>
+                <td>
+                    @switch (unit.UnitId)
+                    {
+                        case 1:
+                            <img src="Icons/knight.png"/>
+                            break;
+                        case 2:
+                            <img src="Icons/archer.png"/>
+                            break;
+                        case 3:
+                            <img src="Icons/mage.png"/>
+                            break;
+                    }
+                </td>
+                <td>
+                    @UnitService.Units.First(x => x.Id == unit.UnitId).Title
+                </td>
+                <td>
+                    @unit.HitPoints HP
+                </td>
+            </tr>
+        }
+    </table>
+
+}
+@code {
+    
+}
