@@ -7,7 +7,7 @@ namespace BlazorBattle2.Client.Services
         public event Action OnChange;
 
         public int Bananas { get; set; } = 1000;
-
+        
         public void EatBananas(int amount)
         {
             Bananas -= amount;

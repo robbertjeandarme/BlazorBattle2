@@ -8,7 +8,6 @@ namespace BlazorBattle2.Client.Services
     public class UnitService : IUnitService
     {
         private readonly IToastService _toastService;
-
         public UnitService(IToastService toastService)
         {
             _toastService = toastService;
