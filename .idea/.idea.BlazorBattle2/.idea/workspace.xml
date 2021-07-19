@@ -6,15 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097e4e5a-65ec-4bf6-88e2-a574b58859d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Login.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/UserRegister.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthStateProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/BlazorBattle2.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/BlazorBattle2.Client.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Army.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Army.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Login.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/BlazorBattle2.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/BlazorBattle2.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Shared/BlazorBattle2.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/BlazorBattle2.Shared.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,26 +50,30 @@
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/TopMenu.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor.css" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor.css" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IBananaService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/AddBananas.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/Unit.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserUnit.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IUnitService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Army.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/index.html" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Login.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserRegister.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthProvider.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Army.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Login.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthStateProvider.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/App.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vAiRi79NHlHapr6gNZyGNdhRSV" />
@@ -81,6 +91,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BlazorServerauthTest/BlazorServerauthTest.sln" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -95,7 +106,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <browser name="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -175,7 +186,11 @@
       <workItem from="1626461946371" duration="6737000" />
       <workItem from="1626480572423" duration="2790000" />
       <workItem from="1626546981904" duration="4116000" />
-      <workItem from="1626551315330" duration="4715000" />
+      <workItem from="1626551315330" duration="4971000" />
+      <workItem from="1626623380802" duration="2514000" />
+      <workItem from="1626649853940" duration="773000" />
+      <workItem from="1626714459419" duration="7373000" />
+      <workItem from="1626733040780" duration="663000" />
     </task>
     <task id="LOCAL-00001" summary="adding TopMenu component">
       <created>1626213174645</created>
@@ -205,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626483328129</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="user login and user register moden and form done">
+      <created>1626567902247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626567902247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +254,7 @@
     <MESSAGE value="Adding build page" />
     <MESSAGE value="Adding a BananaService and Cleanup" />
     <MESSAGE value="Adding army page , services and" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding army page , services and" />
+    <MESSAGE value="user login and user register moden and form done" />
+    <option name="LAST_COMMIT_MESSAGE" value="user login and user register moden and form done" />
   </component>
 </project>

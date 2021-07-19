@@ -1,6 +1,7 @@
 @page "/army"
 @using BlazorBattle2.Shared
 @inject IUnitService UnitService
+@attribute [Authorize]
 <h3>Army</h3>
 
 @if (UnitService.MyUnits.Count == 0)
