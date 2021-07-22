@@ -17,26 +17,32 @@ namespace BlazorBattle2.Client
             _localStorageService = localStorageService;
         }
 
+        /// <summary>
+        /// we maken een lege user aan (empty betekend dat we niet Autenticated zijn )
+        ///
+        /// we gaan kijken in de localStorage of de bool autentiacted aanwezig is
+        ///
+        /// wanner je returnen wij een autenticated user en raisen we NotifyAuthnetiacionStateChagend event
+        ///
+        /// waneer niet raisen we dat zelde event maar zijn we natuurlijk nier Autenticated
+        /// </summary>
+        /// <returns></returns>
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
+            
+            var state = new AuthenticationState(new ClaimsPrincipal());
             if (await _localStorageService.GetItemAsync<bool>("isAuthenticated"))
             {
-                //valid  / authorized user 
                 var identity = new ClaimsIdentity(new[]
                 {
                     new Claim(ClaimTypes.Name, "Robbert")
                 }, "Test authentication type");
 
                 var user = new ClaimsPrincipal(identity);
-                var state = new AuthenticationState(user);
-
-                NotifyAuthenticationStateChanged(Task.FromResult(state));
-
-                return state;
+                state = new AuthenticationState(user);
             }
-
-            //empty user 
-            return (new AuthenticationState(new ClaimsPrincipal()));
+            NotifyAuthenticationStateChanged(Task.FromResult(state));
+            return state;
 
 
         }

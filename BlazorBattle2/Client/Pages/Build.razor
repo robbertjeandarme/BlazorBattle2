@@ -43,5 +43,10 @@
         BananaService.EatBananas(selectedUnit.BananaCost);
         UnitService.AddUnits(selectedUnitId);
     }
-    
+
+    protected override async Task OnInitializedAsync()
+    {
+        await UnitService.LoadUnitAsync();
+    }
+
 }

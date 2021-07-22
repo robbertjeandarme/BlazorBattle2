@@ -66,5 +66,10 @@
         Console.WriteLine($"user is loged");
         NavigationManager.NavigateTo("/login");
     }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await UnitService.LoadUnitAsync();
+    }
 
 }
