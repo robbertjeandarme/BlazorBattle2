@@ -6,19 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097e4e5a-65ec-4bf6-88e2-a574b58859d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Data/IAuthRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Migrations/20210724131811_UserModel.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Migrations/20210724131811_UserModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/AuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/dataSources/0ced426c-fe6e-43ae-90e3-6bbd86812c0b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/dataSources/0ced426c-fe6e-43ae-90e3-6bbd86812c0b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/UnitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/UnitController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Data/DataContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +54,9 @@
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserUnit.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/index.html" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserRegister.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthProvider.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Login.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/App.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" />
@@ -67,9 +65,6 @@
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IUnitService.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Army.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/appsettings.json" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/Unit.cs" />
@@ -78,9 +73,19 @@
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/User.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Data/DataContext.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Startup.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Data/IAuthRepository.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IAuthService.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/AuthService.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" />
+      <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ced426c-fe6e-43ae-90e3-6bbd86812c0b/console.sql" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/AuthController.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vAiRi79NHlHapr6gNZyGNdhRSV" />
@@ -103,10 +108,10 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="RiderCSharpLiveTemplatesSettingsId" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.BlazorBattle2.Client: BlazorBattle2">
+  <component name="RunManager" selected=".NET Launch Settings Profile.BlazorBattle2.Server">
     <configuration name="BlazorBattle2.Client: BlazorBattle2" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BlazorBattle2/Client/BlazorBattle2.Client.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
@@ -202,7 +207,9 @@
       <workItem from="1626784421277" duration="2315000" />
       <workItem from="1626788349349" duration="1836000" />
       <workItem from="1626972863413" duration="14092000" />
-      <workItem from="1627128952405" duration="7994000" />
+      <workItem from="1627128952405" duration="8183000" />
+      <workItem from="1627154904110" duration="10634000" />
+      <workItem from="1627331104830" duration="4101000" />
     </task>
     <task id="LOCAL-00001" summary="adding TopMenu component">
       <created>1626213174645</created>
@@ -253,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626991624736</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding a user models , new user migration , AuthRepository WIP , ServiceResponse">
+      <created>1627138012738</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627138012738</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +314,7 @@
     <MESSAGE value="user login and user register moden and form done" />
     <MESSAGE value="Adding Autentication WIP hc reworking login" />
     <MESSAGE value="adding EF , first migration , dbcontext , UnitController" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding EF , first migration , dbcontext , UnitController" />
+    <MESSAGE value="adding a user models , new user migration , AuthRepository WIP , ServiceResponse" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a user models , new user migration , AuthRepository WIP , ServiceResponse" />
   </component>
 </project>
