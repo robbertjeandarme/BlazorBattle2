@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 
 namespace BlazorBattle2.Client.Services
 {
@@ -10,6 +11,8 @@ namespace BlazorBattle2.Client.Services
 
         public void EatBananas(int amount);
 
-        public void AddBananas(int amount);
+        Task AddBananas(int amount);
+
+        Task GetBananas();
     }
 }

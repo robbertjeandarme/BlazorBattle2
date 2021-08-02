@@ -1,50 +1,86 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Reflection.Emit;
+using System.Runtime.CompilerServices;
 using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
+using System.Text.Json;
 using System.Threading.Tasks;
+using BlazorBattle2.Client.Services;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.VisualBasic.CompilerServices;
 
 namespace BlazorBattle2.Client
 {
     public class CustomAuthStateProvider : AuthenticationStateProvider
     {
         private readonly ILocalStorageService _localStorageService;
+        private readonly HttpClient _http;
+        private readonly IBananaService _bananaService;
 
-        public CustomAuthStateProvider(ILocalStorageService localStorageService)
+        public CustomAuthStateProvider(ILocalStorageService localStorageService, HttpClient http, IBananaService bananaService)
         {
             _localStorageService = localStorageService;
+            _http = http;
+            _bananaService = bananaService;
         }
 
-        /// <summary>
-        /// we maken een lege user aan (empty betekend dat we niet Autenticated zijn )
-        ///
-        /// we gaan kijken in de localStorage of de bool autentiacted aanwezig is
-        ///
-        /// wanner je returnen wij een autenticated user en raisen we NotifyAuthnetiacionStateChagend event
-        ///
-        /// waneer niet raisen we dat zelde event maar zijn we natuurlijk nier Autenticated
-        /// </summary>
-        /// <returns></returns>
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
-            
-            var state = new AuthenticationState(new ClaimsPrincipal());
-            if (await _localStorageService.GetItemAsync<bool>("isAuthenticated"))
+            string authToken = await _localStorageService.GetItemAsStringAsync("authToken");
+
+            var identity = new ClaimsIdentity();
+            _http.DefaultRequestHeaders.Authorization = null;
+
+            if (!string.IsNullOrEmpty(authToken))
             {
-                var identity = new ClaimsIdentity(new[]
+                try
                 {
-                    new Claim(ClaimTypes.Name, "Robbert")
-                }, "Test authentication type");
-
-                var user = new ClaimsPrincipal(identity);
-                state = new AuthenticationState(user);
+                    identity = new ClaimsIdentity(ParseClaimsFromJwt(authToken), "jwt");
+                    _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",
+                        authToken.Replace("\"" , ""));
+                    await _bananaService.GetBananas();
+                }
+                catch (Exception)
+                {
+                    await _localStorageService.RemoveItemAsync("authToken");
+                    identity = new ClaimsIdentity();
+                }
             }
+
+            var user = new ClaimsPrincipal(identity);
+            var state = new AuthenticationState(user);
+
             NotifyAuthenticationStateChanged(Task.FromResult(state));
+
             return state;
+        }
 
+        private byte[] ParseBase64WithoutPadding(string base64)
+        {
+            switch (base64.Length % 4)
+            {
+                case 2: base64 += "=="; break;
+                case 3: base64 += "="; break;
+            }
+            return Convert.FromBase64String(base64);
+        }
 
+        public IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
+        {
+            var payload = jwt.Split('.')[1];
+            var jsonBytes = ParseBase64WithoutPadding(payload);
+            var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
+            var claims = keyValuePairs.Select(kvp => new Claim(kvp.Key, kvp.Value.ToString()));
+
+            return claims;
         }
     }
+
 }

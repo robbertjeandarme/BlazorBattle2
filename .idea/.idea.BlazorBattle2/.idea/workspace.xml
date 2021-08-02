@@ -6,20 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097e4e5a-65ec-4bf6-88e2-a574b58859d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/AuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/IAuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/dataSources/0ced426c-fe6e-43ae-90e3-6bbd86812c0b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/dataSources/0ced426c-fe6e-43ae-90e3-6bbd86812c0b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorBattle2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthStateProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthStateProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/IAuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Services/IBananaService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Services/IBananaService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/BlazorBattle2.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/BlazorBattle2.Server.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorBattle2/Server/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorBattle2/Server/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,43 +50,44 @@
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/TopMenu.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor.css" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor.css" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IBananaService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/AddBananas.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserUnit.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/wwwroot/index.html" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/MainLayout.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserRegister.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthProvider.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Login.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/App.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthStateProvider.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IUnitService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Army.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Server/appsettings.json" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/Unit.cs" />
       <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ced426c-fe6e-43ae-90e3-6bbd86812c0b/console_1.sql" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/UnitController.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/User.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Data/DataContext.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Server/Startup.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Data/IAuthRepository.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/ServiceResponse.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IAuthService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/_Imports.razor" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Program.cs" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/AuthService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Build.razor" />
       <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ced426c-fe6e-43ae-90e3-6bbd86812c0b/console.sql" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/UnitService.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Register.razor" />
-      <option value="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/AuthController.cs" />
       <option value="$PROJECT_DIR$/BlazorBattle2/Shared/UserLogin.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IAuthService.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/AuthService.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Server/appsettings.json" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Server/Data/AuthRepository.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/NavMenu.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Server/Startup.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/Login.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Shared/TopMenu.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Pages/Index.razor" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/CustomAuthStateProvider.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/IBananaService.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Server/Controllers/UserController.cs" />
+      <option value="$PROJECT_DIR$/BlazorBattle2/Client/Services/BananaService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vAiRi79NHlHapr6gNZyGNdhRSV" />
@@ -209,7 +211,14 @@
       <workItem from="1626972863413" duration="14092000" />
       <workItem from="1627128952405" duration="8183000" />
       <workItem from="1627154904110" duration="10634000" />
-      <workItem from="1627331104830" duration="4101000" />
+      <workItem from="1627331104830" duration="6391000" />
+      <workItem from="1627396160796" duration="4353000" />
+      <workItem from="1627426234061" duration="395000" />
+      <workItem from="1627553456486" duration="1809000" />
+      <workItem from="1627664267027" duration="1044000" />
+      <workItem from="1627767129413" duration="1209000" />
+      <workItem from="1627768540905" duration="3180000" />
+      <workItem from="1627932597997" duration="9262000" />
     </task>
     <task id="LOCAL-00001" summary="adding TopMenu component">
       <created>1626213174645</created>
@@ -267,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627138012738</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding auth controler , auth repo">
+      <created>1627341839702</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627341839702</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +331,7 @@
     <MESSAGE value="Adding Autentication WIP hc reworking login" />
     <MESSAGE value="adding EF , first migration , dbcontext , UnitController" />
     <MESSAGE value="adding a user models , new user migration , AuthRepository WIP , ServiceResponse" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a user models , new user migration , AuthRepository WIP , ServiceResponse" />
+    <MESSAGE value="adding auth controler , auth repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding auth controler , auth repo" />
   </component>
 </project>
