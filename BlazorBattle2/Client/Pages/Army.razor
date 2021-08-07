@@ -1,44 +1,51 @@
 @page "/army"
-@using BlazorBattle2.Shared
 @inject IUnitService UnitService
 @attribute [Authorize]
-<h3>Army</h3>
 
-@if (UnitService.MyUnits.Count == 0)
-{
-    <span>Army is empty !</span>
-}
-else
+<h3>Army</h3>
+@if (UnitService.Units.Count > 0)
 {
     <table class="table">
-        @foreach (var unit in UnitService.MyUnits)
+        @foreach (var userUnit in UnitService.MyUnits)
         {
             <tr>
                 <td>
-                    @switch (unit.UnitId)
+                    @switch (userUnit.UnitId)
                     {
-                        case 1:
-                            <img src="Icons/knight.png"/>
-                            break;
-                        case 2:
-                            <img src="Icons/archer.png"/>
-                            break;
-                        case 3:
-                            <img src="Icons/mage.png"/>
-                            break;
+                        case 1: <img src="Icons/knight.png">break;
+                        case 2: <img src="Icons/archer.png">break;
+                        case 3 : <img src="Icons/mage.png">break;
                     }
                 </td>
                 <td>
-                    @UnitService.Units.First(x => x.Id == unit.UnitId).Title
+                    @UnitService.Units.First(unit => unit.Id == userUnit.UnitId).Title
                 </td>
                 <td>
-                    @unit.HitPoints HP
+                    @userUnit.HitPoints HP
                 </td>
             </tr>
         }
     </table>
-
+    <div style="text-align: center;">
+        <button @onclick="ReviveArmy" class="btn btn-warning">Revive army for 1000 bananas !</button>
+    </div>
 }
+else
+{
+    <span>Loading Units...</span>
+}
+
+
 @code {
-    
+    protected override async Task OnInitializedAsync()
+    {
+        await UnitService.LoadUnitAsync();
+        await UnitService.LoadUserUnitAsync();
+    }
+
+    private async Task ReviveArmy()
+    {
+        await UnitService.ReviveArmy();
+    }
+
 }

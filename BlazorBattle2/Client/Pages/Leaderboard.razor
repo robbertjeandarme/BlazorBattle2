@@ -1,0 +1,71 @@
+@page "/Leaderboard"
+@inject ILeaderBoardService LeaderBoardService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<h3>Leaderboard</h3>
+
+@if (LeaderBoardService.LeaderBoard == null)
+{
+    <span>Loading...</span>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Rank</th>
+            <th>User</th>
+            <th>Victories</th>
+            <th>Defeats</th>
+            <th>Battles</th>
+            <th>Fight</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach (var entry in LeaderBoardService.LeaderBoard)
+            {
+                <tr style="@GetMyStyle(entry.UserId)">
+                    <td>@entry.Rank</td>
+                    <td>@entry.UserName</td>
+                    <td>@entry.Victories</td>
+                    <td>@entry.Defeats</td>
+                    <td>@entry.Battles</td>
+                    <td>
+                        @if (myUserId != entry.UserId)
+                        {
+                            <button class="btn btn-primary">Fight</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    int myUserId;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await LeaderBoardService.GetLeaderBoards();
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        myUserId = int.Parse(authState.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value);
+    }
+
+    public string GetMyStyle(int userId)
+    {
+        return myUserId == userId ? "color:green; font-weight:bold;" : string.Empty;
+        
+        // Does same thing only different syntax
+        
+        // if (myUserId == userId)
+        // {
+        //     return "color:green; font-weight:bold;";
+        // }
+        // return string.Empty;
+        
+    }
+
+}

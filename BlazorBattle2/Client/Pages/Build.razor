@@ -21,25 +21,15 @@
     <div class="validation-message">
         Need more bananas ! 
     </div>
-}
+} 
 
 @code {
     int selectedUnitId = 1;
     bool needMoreBananas = false;
     
-    public void BuildUnit()
+    public async Task BuildUnit()
     {
-        var selectedUnit = UnitService.Units.FirstOrDefault(unit => unit.Id == selectedUnitId);
-
-        if (BananaService.Bananas < selectedUnit.BananaCost)
-        {
-            needMoreBananas = true;
-            ToastService.ShowError("Need More Bananas" , ":-(");
-            return;
-        }
-        
-        BananaService.EatBananas(selectedUnit.BananaCost);
-        UnitService.AddUnits(selectedUnitId);
+        await UnitService.AddUnits(selectedUnitId);
     }
 
     protected override async Task OnInitializedAsync()

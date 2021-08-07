@@ -31,6 +31,7 @@ namespace BlazorBattle2.Client
             builder.Services.AddScoped<IBananaService, BananaService>();
             builder.Services.AddScoped<IUnitService, UnitService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<ILeaderBoardService, LeaderBoardService>();
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
             builder.Services.AddOptions();
             builder.Services.AddAuthorizationCore();

@@ -23,21 +23,20 @@ namespace BlazorBattle2.Client.Services
             BananasChanged();
         }
 
+        void BananasChanged() => OnChange.Invoke();
+        
         public async Task AddBananas (int amount)
         {
             var result = await _httpClient.PutAsJsonAsync<int>("/api/user/addbananas" , amount);
             Bananas = await result.Content.ReadFromJsonAsync<int>();
             BananasChanged();   
         }
-
-        void BananasChanged() => OnChange.Invoke();
         
         public async Task GetBananas()
         {
             Bananas = await _httpClient.GetFromJsonAsync<int>("/api/user/getbananas");
             BananasChanged();
         }
-
         
     }
 }

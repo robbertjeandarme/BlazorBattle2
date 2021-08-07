@@ -1,5 +1,6 @@
 using BlazorBattle2.Shared;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace BlazorBattle2.Server.Data
 {
@@ -10,10 +11,31 @@ namespace BlazorBattle2.Server.Data
             
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Battle>()
+                .HasOne(b => b.Attacker)
+                .WithMany()
+                .OnDelete(DeleteBehavior.NoAction);
+            
+            modelBuilder.Entity<Battle>()
+                .HasOne(b => b.Opponent)
+                .WithMany()
+                .OnDelete(DeleteBehavior.NoAction);
+            
+            modelBuilder.Entity<Battle>()
+                .HasOne(b => b.Winner)
+                .WithMany()
+                .OnDelete(DeleteBehavior.NoAction);
+        }
+        
         public DbSet<Unit> Units { get; set; }
         
         public DbSet<User> Users { get; set; }
-        
+
+        public DbSet<UserUnit> UserUnits { get; set; }
+
+        public DbSet<Battle> Battles { get; set; }
         
     }
 }
